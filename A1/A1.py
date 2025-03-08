@@ -81,7 +81,7 @@ fig, ax = plt.subplots(figsize=(12, 6))
 ax.text(0.01, 0.99, stata_table, fontsize=12, fontfamily="monospace", va='top', ha='left')
 
 ax.axis('off')
-plt.savefig("stata_style_descriptive_statistics.png", bbox_inches='tight', dpi=300)
+plt.savefig("figures/stata_style_descriptive_statistics.png", bbox_inches='tight', dpi=300)
 plt.show()
 # ============================
 # 4. CHOOSE PREDICTOR & Model
@@ -226,7 +226,7 @@ ax2.plot(regression_results_fixed["Model"], regression_results_fixed["BIC Scaled
 ax2.set_ylabel("BIC (Scaled)")
 ax2.legend(loc="upper right")
 
-plt.savefig("performance_graph.png", bbox_inches="tight", dpi=300)
+plt.savefig("figures/performance_graph.png", bbox_inches="tight", dpi=300)
 plt.show()
 
 
@@ -237,7 +237,7 @@ plt.xlabel("Age (years)")
 plt.ylabel("Density")
 plt.legend()
 plt.title("Age Distribution by Gender")
-plt.savefig("age_distribution_gender.png", bbox_inches="tight", dpi=300)
+plt.savefig("figures/age_distribution_gender.png", bbox_inches="tight", dpi=300)
 plt.show()
 
 # Visualization 2: Density plot by education level
@@ -249,7 +249,7 @@ plt.xlabel("Earning per Hours")
 plt.ylabel("Density")
 plt.legend()
 plt.title("Education Distribution by Earning per Hours")
-plt.savefig("distribution_education.png", bbox_inches="tight", dpi=300)
+plt.savefig("figures/distribution_education.png", bbox_inches="tight", dpi=300)
 plt.show()
 
 # Visualization 3: Histogram of earnings per hour
@@ -258,7 +258,7 @@ sns.histplot(df_finance["earnings_per_hour"], bins=30, kde=True, color="purple")
 plt.xlabel("Earnings per Hour")
 plt.ylabel("Frequency")
 plt.title("Histogram of Earnings per Hour")
-plt.savefig("earnings_histogram.png", bbox_inches="tight", dpi=300)
+plt.savefig("figures/earnings_histogram.png", bbox_inches="tight", dpi=300)
 plt.show()
 desc_stats_latex = desc_stats.to_latex(index=True, float_format="%.2f")
 model_performance_latex = regression_results_fixed.to_latex(index=False, float_format="%.3f")
