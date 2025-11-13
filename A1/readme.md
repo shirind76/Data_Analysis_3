@@ -29,7 +29,7 @@ The table below summarizes model performance using Root Mean Squared Error (RMSE
 
 The graph below illustrates the relationship between model complexity and performance. As expected, RMSE declines with additional predictors, while BIC helps balance fit and complexity.
 
-![Model Complexity vs. Performance](performance_graph.png)
+![Model Complexity vs. Performance](figures/performance_graph.png)
 
 Increasing model complexity improves prediction accuracy (lower RMSE) but may lead to overfitting, as indicated by changes in BIC.  
 **Model 4** includes an interaction term to capture the relationship between non-US-born status and education level, adding nuance to earnings predictions.
