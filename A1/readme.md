@@ -50,33 +50,21 @@ The analysis highlights the trade-off between model complexity and predictive pe
 
 ## Appendix
 
+
 ### Model Specification
 
-We estimate four OLS models:
+- **Model 1:**  
+  *Earnings* = β₀ + β₁·Sex + β₂·Age + β₃·Education₍low₎ + β₄·Education₍middle₎ + β₅·Education₍high₎ + ε
 
-- **Model 1:**
+- **Model 2:**  
+  *Earnings* = β₀ + β₁·Sex + β₂·Age + β₃·Education₍low₎ + β₄·Education₍middle₎ + β₅·Education₍high₎ + β₆·White + β₇·Afram + β₈·Asian + β₉·Hisp + ε
 
-  $$
-  Earnings = \beta_0 + \beta_1 Sex + \beta_2 Age + \beta_3 Education_{low} + \beta_4 Education_{middle} + \beta_5 Education_{high} + \epsilon
-  $$
+- **Model 3:**  
+  *Earnings* = β₀ + β₁·Sex + β₂·Age + β₃·Education₍low₎ + β₄·Education₍middle₎ + β₅·Education₍high₎ + β₆·White + β₇·Afram + β₈·Asian + β₉·Hisp + β₁₀·NonUSborn + β₁₁·Married + β₁₂·Divorced + β₁₃·Widowed + β₁₄·Union + ε
 
-- **Model 2:**
+- **Model 4:**  
+  *Earnings* = β₀ + β₁·Sex + β₂·Age + β₃·Education₍low₎ + β₄·Education₍middle₎ + β₅·Education₍high₎ + β₆·White + β₇·Afram + β₈·Asian + β₉·Hisp + β₁₀·NonUSborn + β₁₁·Married + β₁₂·Divorced + β₁₃·Widowed + β₁₄·Union + β₁₅·NonUS\_Education₍high₎ + ε
 
-  $$
-  Earnings = \beta_0 + \beta_1 Sex + \beta_2 Age + \beta_3 Education_{low} + \beta_4 Education_{middle} + \beta_5 Education_{high} + \beta_6 White + \beta_7 Afram + \beta_8 Asian + \beta_9 Hisp + \epsilon
-  $$
-
-- **Model 3:**
-
-  $$
-  Earnings = \beta_0 + \beta_1 Sex + \beta_2 Age + \beta_3 Education_{low} + \beta_4 Education_{middle} + \beta_5 Education_{high} + \beta_6 White + \beta_7 Afram + \beta_8 Asian + \beta_9 Hisp + \beta_{10} NonUSborn + \beta_{11} Married + \beta_{12} Divorced + \beta_{13} Widowed + \beta_{14} Union + \epsilon
-  $$
-
-- **Model 4:**
-
-  $$
-  Earnings = \beta_0 + \beta_1 Sex + \beta_2 Age + \beta_3 Education_{low} + \beta_4 Education_{middle} + \beta_5 Education_{high} + \beta_6 White + \beta_7 Afram + \beta_8 Asian + \beta_9 Hisp + \beta_{10} NonUSborn + \beta_{11} Married + \beta_{12} Divorced + \beta_{13} Widowed + \beta_{14} Union + \beta_{15} NonUS\_Education_{high} + \epsilon
-  $$
 
 ---
 
